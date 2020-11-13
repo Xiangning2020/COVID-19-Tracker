@@ -14,17 +14,16 @@ import LineGraph from "./LineGraph.js";
 import "./util.js";
 import { sortData, prettyPrintStat } from "./util.js";
 import "leaflet/dist/leaflet.css";
-import numeral from "numeral";
 
 function App() {
   //https://disease.sh/v3/covid-19/countries
-
-  const [countries, setCountries] = useState([]); // 全部国家的名字；只跑一次
-  const [country, setCountry] = useState("worldwide"); // 点击到哪个国家，国家的code
+  const [country, setCountry] = useState("worldwide");
+  const [countries, setCountries] = useState([]);
   const [countryCases, setCountryCases] = useState({}); // 点击到那个国家，那个国家到数据；
   const [tableData, setTableData] = useState([]);
-  const [mapLat, setMapLat] = useState(34.7878);
-  const [mapLng, setMapLng] = useState(104.389);
+  // const [mapLat, setMapLat] = useState(34.7878);
+  // const [mapLng, setMapLng] = useState(34.7878);
+  const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
   const [mapZoom, setMapZoom] = useState(3);
   const [mapData, setMapData] = useState([]); // 传入数据的时候要注意
   const [casesType, setCasesType] = useState("cases");
@@ -47,11 +46,9 @@ function App() {
         name: country.country,
         value: country.countryInfo.iso2,
         cases: country.cases,
-      })); // data 直接就是array 形式；
-      console.log(data);
+      }));
       setCountries(countries);
       setMapData(data);
-
       setTableData(sortData(data)); // 这里直接引用的data.但是我们需要对data进行排序。
     };
     getCountriesData();
@@ -60,26 +57,20 @@ function App() {
   // 只在一开始的时候跑一次；
 
   const onCountryChange = async (e) => {
-    let countryCode = e.target.value;
-    setCountry(countryCode);
+    const countryCode = e.target.value;
 
     const url =
-      e.target.value === "worldwide"
+      countryCode === "worldwide"
         ? "https://disease.sh/v3/covid-19/all"
-        : `https://disease.sh/v3/covid-19/countries/${countryCode}?strict=true`;
-
+        : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
     await fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        setCountry(countryCode);
         setCountryCases(data);
-        setMapZoom(4);
-        setMapLat(data.countryInfo.lat);
-        setMapLng(data.countryInfo.long);
-        // setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+        setMapCenter([data.countryInfo.lat, data.countryInfo.long]) &&
+          setMapZoom(4);
       });
-
-    // console.log(data);
-    // console.log([data.countryInfo.lat, data.countryInfo.long]);
   };
 
   return (
@@ -94,7 +85,7 @@ function App() {
           <FormControl variant="outlined" className="app__dropdown">
             <Select
               value={country}
-              onChange={onCountryChange}
+              onClick={onCountryChange}
               className="app__selector"
             >
               <MenuItem value="worldwide">WorldWide</MenuItem>
@@ -136,7 +127,7 @@ function App() {
         <Map
           casesType={casesType}
           data={mapData}
-          center={[mapLat, mapLng]}
+          center={mapCenter}
           zoom={mapZoom}
         />
       </div>
