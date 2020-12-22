@@ -16,11 +16,11 @@ Choose Austria from the menulist and click on the third card.
 Try another one, like iceland. Also you can change the cards.
 
 Choose S.Korea and click on the map. Users can see the change of the data from the three cards above, the worldwide line graph.
-![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_Korea.png)
+
 
 Let's try other countries.
-![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_Singapore.png)
-![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_iceland.png)
+
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/austria.gif)
 
 Thanks very much for the instruction of [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ).
 
