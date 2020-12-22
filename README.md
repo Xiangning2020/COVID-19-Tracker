@@ -22,9 +22,9 @@ Also you may have to change the firebase related code in the files。
 
 In the project directory, you can run:
 
-### `npm install`
+`npm install`
 and then
-### `npm start`
+`npm start`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
