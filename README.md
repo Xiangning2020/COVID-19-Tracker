@@ -13,7 +13,7 @@ when a country is clicked on the map by utilizing Leaflet.js.
 - [x] Visualized the worldwide COVID-19 cases through tables and line graphs by using Chart.js and disease.sh API to
 fetch the data.
 
-Thanks to the instruction of [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ).
+Thanks very much for the instruction of [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ).
 
 ## How to start?
 
