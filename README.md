@@ -2,7 +2,7 @@
 
 This project is a basic tracker which gives the real time COVID-19 data of different countries all over the world in the forms of statistics, table, map and line graphs. 
 
--[x] Designed three cards to show the corresponding new, recovered and death cases both daily and in total given a
+- [x] Designed three cards to show the corresponding new, recovered and death cases both daily and in total given a
 selected country from a menulist.
 • Represented the cases of each country on a map by drawing different sized and colored circles, centered and zoomed
 in the map to the position of a country when it’s selected.
