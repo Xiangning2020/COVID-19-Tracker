@@ -1,11 +1,15 @@
-# COVID-19 Tracker!
+# COVID-19 Tracker
 
 This project is a basic tracker which gives the real time COVID-19 data of different countries all over the world in the forms of statistics, table, map and line graphs. 
 
-Website is [here](https://covid-19-tracker-xiangning.web.app/)! 
+Website is [here](https://covid-19-tracker-xiangning.web.app/).
 
 ![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_worldwide.png)
 
+Users can click the country on the map to get the detailed data. For example:
+
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_Korea.png)
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_Singapore.png)
 
 Thanks very much for the instruction of [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ).
 
