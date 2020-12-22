@@ -12,13 +12,9 @@ Users can choose a country from the menulist or directly click a country on the 
 For example:
 Choose Austria from the menulist and click on the third card. 
 
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/worldwide.gif)
 
 Try another one, like iceland. Also you can change the cards.
-
-Choose S.Korea and click on the map. Users can see the change of the data from the three cards above, the worldwide line graph.
-
-
-Let's try other countries.
 
 ![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/austria.gif)
 
