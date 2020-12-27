@@ -11,17 +11,18 @@ Users can choose a country from the menulist or directly click a country on the 
 
 For example:
 Change the cards to get the live, death and recovered data.
-image
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/color.gif)
 
-Choose a certain country from the menulist and click on the third card, China, for example:
+Choose a certain country from the menulist and click on the three cards, China, for example:
 
 ![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/china.gif)
 
-Try another one, like Iceland. Also you can change the cards.
+Try another one, like Iceland. 
 
 ![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/iceland.gif)
 
 Or Mexico,
+
 ![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/mexico.gif)
 
 
