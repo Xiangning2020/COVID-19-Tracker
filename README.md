@@ -4,19 +4,26 @@ This project is a basic tracker which gives the real time COVID-19 data of diffe
 
 Website is [here](https://covid-19-tracker-xiangning.web.app/). It may get slower to fetch the data outside USA.
 
-![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/covid_worldwide.png)
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/page.png)
 
 
 Users can choose a country from the menulist or directly click a country on the map to get the detailed data. 
 
 For example:
-Choose Austria from the menulist and click on the third card. 
+Change the cards to get the live, death and recovered data.
+image
 
-![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/worldwide.gif)
+Choose a certain country from the menulist and click on the third card, China, for example:
 
-Try another one, like iceland. Also you can change the cards.
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/china.gif)
 
-![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/austria.gif)
+Try another one, like Iceland. Also you can change the cards.
+
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/iceland.gif)
+
+Or Mexico,
+![image](https://github.com/Xiangning2020/COVID-19-Tracker/blob/master/mexico.gif)
+
 
 Thanks very much for the instruction of [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ).
 
